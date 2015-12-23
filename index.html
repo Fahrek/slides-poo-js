@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Programación Orientada a Objetos en JavaScript</title><meta name='description' content='En esta presentación aprenderás sobre la programación orientada a objetos en JavaScript'><meta charset="utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="http://bextlan.com/img/favicon.ico" />
+<link rel="shortcut icon" type="image/png" href="http://bextlan.com/img/apple-touch-icon.png" />
+<link rel="apple-touch-icon" href="http://bextlan.com/img/apple-touch-icon.png" />
+<link rel="stylesheet" href="assets/css/reveal.css">
+<link rel="stylesheet" href="assets/css/theme/sky.css" id="theme">
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+<link rel="stylesheet" href="assets/css/jon.css">
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write( '<link rel="stylesheet" href="assets/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+<!--[if lt IE 9]>
+	<script src="assets/lib/js/html5shiv.js"></script>
+<![endif]--></head>
+<body>
+	<header>
+	<div><img src="http://bextlan.com/img/bextlan-logo.png" /></div>
+	<div><img src="img/javascript.png" style="max-width: 10%;" /></div>
+</header>	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<section>
+	<h1>Bienvenid@s</h1>
+	<p>Al Curso de Diseño y Programación Web de Bextlán</p>
+</section>
+<section>
+	<h2>Slides</h2>
+	<p>
+		<a href="http://jonmircha.github.io/slides-poo-js" target="_blank">jonmircha.github.io/slides-poo-js</a>
+	</p>
+</section>
+<section>
+	<p>Un especial agradecimiento a</p>
+	<p class="fragment">TOD@S USTEDES QUE HAN DEPOSITADO SU CONFIANZA EN ESTE CURSO</p>
+	<div class="carita fragment"> =D </div>
+</section>
+<section>
+	<p>
+    	por <a href="http://twitter.com/jonmircha" target="_blank">@jonmircha</a> fundador de <a href="http://twitter.com/bextlan" target="_blank">@bextlan</a>
+	</p>
+	<a href="http://bextlan.com" target="_blank">
+    	<img src="http://bextlan.com/img/bextlan@2x.png" />
+	</a>
+</section>
+<section>
+	<p>
+    	<a href="http://jonmircha.com" target="_blank">Jonathan MirCha</a>
+	</p>
+	<p>
+		<a href="http://jonmircha.com" target="_blank"><img src="http://bextlan.com/img/jonmircha.jpg" style="height: 300px; width: 300px;" /></a>
+	</p>
+	<p class="fragment">
+		Ing. en Sistemas<br />Mtro. en Comunicación con Medios Virtuales
+	</p>
+	<p class="fragment">
+		<b>Creativo de la Web</b> - <b>Docente Digital</b> - <b>Frontend</b>
+	</p>
+	<p class="fragment">
+		Maratonista
+	</p>
+</section>			</section>
+			<section>
+				<section>
+					<h2>Programación Orientada a Objetos</h2>
+					<h2>en JavaScript</h2>
+				</section>
+				<section>
+					<h3>Un momento,</h3>
+					<h2>Antes entendamos algunas cosas sobre...</h2>
+					<h1 class="fragment">Qué es PROGRAMAR</h1>
+				</section>
+				<section>
+					<p>La gente cree que programar es dificil, algunas razones:</p>
+					<ul>
+						<li class="fragment">MALOS Profesores</li>
+						<li class="fragment">Programadores que se sienten DIOSES</li>
+						<li class="fragment">PERSONAS que NO les gusta ANALIZAR</li>
+					</ul>
+				</section>
+				<section>
+					<h2>LA PROGRAMACIÓN:</h2>
+					<ul>
+						<li class="fragment">Es intuitivo e inherente a los humanos</li>
+						<li class="fragment">Las cosas intuitivas se van a la memoria muscular, donde no se necesita pensar, se ejecuta en automático, como respirar</li>
+						<li class="fragment">Desde que te levantas estás programando</li>
+						<li class="fragment">Debería enseñarse desde la primaria</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li class="fragment">PROGRAMAR es el FLUJO de ALGO que se PROCESA, se TRANSFORMA y TERMINA de OTRO MODO</li>
+						<li class="fragment">Debemos PENSAR como HUMANOS y NO como MÁQUINAS</li>
+						<li class="fragment">Debemos entender el FLUJO de lo que se quiere hacer, para EJECUTAR los PROCESOS que controlarán dicho FLUJO</li>
+						<li class="fragment">NUNCA traten de ejecutar PROCESOS, sin antes tener un FLUJO que controlar</li>
+					</ul>
+				</section>
+				<section>
+					<h1>PROGRAMAR es FLUJO y NO PROCESOS</h1>
+				</section>
+			</section>
+			<section>
+				<h2>Ahora sí...</h2>
+				<h1 class="fragment">JavaScript</h1>
+			</section>
+			<section>
+				<section>
+					<p class="fragment">
+						JavaScript es el lenguaje de programación frontend de la web.
+					</p>
+					<br />
+					<p class="fragment">
+						Es el más popular en Internet, y trabaja en todos los principales navegadores, como Internet Explorer, Firefox, Chrome, Opera, Safari y móviles.
+					</p>
+				</section>
+				<section>
+					<p class="fragment">
+						Se utiliza en miles de millones de sitios web para agregar funcionalidad, validar formularios, comunicarse con el servidor, entre otras cosas.
+					</p>
+					<br />
+					<p class="fragment">
+						Y algo más...
+					</p>
+					<br />
+					<h2 class="fragment">
+						HTML5 APESTA a JavaScript
+					</h2>
+					<br />
+					<h3 class="carita fragment">
+						<div>\</div>
+						<div>}=D</div>
+						<div>/</div>
+					</h3>
+				</section>
+				<section>
+					<p class="fragment">
+						Es un lenguaje interpretado, es decir, no necesita compilar para ejecutarse.
+					</p>
+					<br />
+					<p class="fragment">
+						Se define como orientado a objetos, basado en prototipos, no tipado y dinámico.
+					</p>
+					<br />
+					<p class="fragment">
+						Todo el mundo puede usarlo sin necesidad de adquirir una licencia
+					</p>
+				</section>
+				<section>
+					<h3 class="fragment"> Java y JavaScript NO son lo mismo</h3>
+					<br />
+					<h3 class="fragment">ActionScript y JavaScript son PRIMOS </h3>
+					<br />
+					<h4 class="fragment">JavaScript es una implementación del lenguaje estándar ECMAScript</h4>
+					<br />
+					<h4 class="fragment">ECMA-262 es el estándar oficial de JavaScript.</h4>
+				</section>
+				<section>
+					<p class="fragment">JavaScript fue inventado por Brendan Eich de Netscape en <mark>13 DÍAS</mark></p>
+					<br />
+					<p class="fragment">Apareció con Navigator 2.0, y desde entonces (1996) en todos los navegadores.</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Ahora un poco de...</h2>
+					<h2 class="fragment">Programación<br />Orientada a Objetos</h2>
+				</section>
+				<section>
+					<p class="fragment">
+						La POO trata de plasmar o representar<br /><br />la realidad del mundo físico (lo concreto)<br /><br />y llevarlo al mundo digital (lo abstracto)
+					</p>
+				</section>
+				<section>
+					<p class="fragment">
+						Platón primer programador POO
+					</p>
+					<img src="img/platon.jpg" />
+					<p class="fragment">
+						Decía que vivimos en el mundo de las ideas, y los objetos son representaciones físicas de esa idea.
+					</p>
+				</section>
+				<section>
+					<h3 class="fragment">4 Conceptos básicos de POO</h3>
+					<ol class="cinco-columnas">
+						<li class="fragment">Clase</li>
+						<li class="fragment">Objeto</li>
+						<li class="fragment">Métodos</li>
+						<li class="fragment">Atributos</li>
+					</ol>
+					<img class="fragment tres-columnas" src="img/kenai.jpg" alt="Kenai" />
+					<ol class="tres-columnas" style="font-size:.75em; margin-left:50px;">
+						<li class="fragment"><code>Class Perro(){ ... }</code></li>
+						<li class="fragment"><code>kEnAi = new Perro();</code></li>
+						<li class="fragment"><code>kEnAi.ladrar(); kEnAi.comer("croqueta");</code></li>
+						<li class="fragment"><code>kEnAi.raza = "zorrito firefox"; kEnAi.edad=2; kEnAi.entrenado=true;</code></li>
+					</ol>
+				</section>
+				<section>
+					<ol>
+						<li class="fragment">Clase: Módelo a seguir<br />La idea<br /><code>Class Perro(){...}</code><br /><br /></li>
+						<li class="fragment">Objeto: Representación del módelo<br />La representación física de la idea<br /> <code>kenai = new Perro();</code><br /><br /></li>
+					</ol>
+					<p class="fragment">
+						Los objetos tienen 2 facultades
+					</p>
+				</section>
+				<section>
+					<ul>
+						<li class="fragment">
+							Métodos: Hacen cosas, Realiazan acciones<br/>objeto.metodo()<br/>correr, caminar, mover la cola, ladrar (verbos/acciones)<br /><br /><code>kenai.comer("croqueta"); kenai.ladrar();</code>
+						</li>
+						<br /><br />
+						<li class="fragment">
+							Los Métodos fuera de los objetos se llaman funciones, los parámetros son opcionales puede llevar o no, y se separan por comas. ej:
+							<br /><br />
+							<code>function ladrar(){...}</code>
+							<br />
+							<code>function comer(comida){...}</code>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li class="fragment">
+							Atributos: Tiene características o propiedades<br />objeto.atributo=valor<br /><br /><code>kenai.raza="Criollo"; kenai.sexo = "Macho"; kenai.edad=2; kenai.tamanio = "Mediana"; kenai.adiestrado=true; kenai.esterilizado = true;</code>
+						</li>
+						<br /><br />
+						<li class="fragment">
+							Los Atributos fuera de los objetos se llaman variables. ej:<br /><br /><code>var raza = "Firefox";</code>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="fragment">3 tipos básicos de variables</h2>
+					<br />
+					<h3 class="fragment">En cualquier lenguaje</h3>
+					<br />
+					<ol>
+						<li class="fragment">Strings ("Cadenas")</li>
+						<li class="fragment">Numbers (enteros-reales)</li>
+						<li class="fragment">Booleans (true-false)</li>
+					</ol>
+				</section>
+				<section>
+					<p class="fragment">JavaScript trabaja con Camel Case</p>
+					<p class="fragment">(Técnica del Camello)</p>
+					<br />
+					<ol>
+						<li class="fragment">Cuando una instrucción tenga una sola palabra, va en minúsculas p.e. write().</li>
+						<br /><br />
+						<li class="fragment">Sólo las clases rompen esta regla, siempre va en mayúscula la letra inicial p.e. Date()</li>
+						<br /><br />
+						<li class="fragment">Cuando una instrucción tenga 2 o más palabras, apartir de la segunada la primer letra va en mayúscula p.e. getElementById()</li>
+					</ol>
+				</section>
+				<section>
+					<h2 class="fragment">POO en JavaScript</h2>
+					<br />
+					<h3 class="fragment">Los 3 objetos padres en JS</h3>
+					<ol>
+						<li class="fragment">Window</li>
+						<li class="fragment">Document</li>
+						<li class="fragment">Navigator</li>
+					</ol>
+					<br /><br />
+					<h3 class="fragment">
+						<a href="http://librosweb.es/ajax/capitulo_4.html" target="_blank">Document Object Model (DOM)</a>
+					</h3>
+				</section>
+			</section>
+			<section>
+				<section>
+	<h2>Muchas Gracias</h2>
+	<p><b>j@bextlan.com</b></p>
+</section>				<section>
+					<p style="font-size:100px;"><b>#bextlanweb</b></p>
+				</section>					
+			</section>							
+		</div>
+	</div>
+	<footer>
+	<p><cite>Curso de Diseño y Programación Web de Bextlán</cite></p>
+	<p>Jonathan MirCha - <a href="http://twitter.com/jonmircha" target="_blank" style="color:white; text-decoration:none">@jonmircha</a></p>
+</footer>
+<script src="assets/lib/js/head.min.js"></script>
+<script src="assets/js/reveal.min.js"></script>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default' // default/cube/page/concave/zoom/linear/fade/none
+	});
+</script></body>
+</html>
